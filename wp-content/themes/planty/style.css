@@ -1,8 +1,57 @@
 /*
 Theme Name: Planty
 Description: Theme enfant de blankslate
-Author: David Bartholome
+Author: David BARTHOLOME
 Author URI: https://github.com/DanteMaiden/Planty
 Template: blankslate
 Version: 0.1.0
 */
+
+/* Masquage infos formulaire */
+.nf-before-form-content, .nf-form-title{
+    display: none !important;
+}
+
+/* Style formulaires */
+
+#nf-field-4{
+	background-color: #E0B9B4;
+	border-radius: 5px;
+}
+
+.nf-field-element input, .nf-field-element textarea {
+	border: none !important;
+	border-radius: 7px !important;
+}
+
+.nf-field-label{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.nf-field-element input[type=submit]{
+	width: 198px !important;
+	height: 55px !important;
+}
+
+.submit-wrap{
+	text-align: center
+}
+
+
+/* Style footer */
+
+footer {
+	width: 100% !important;
+	text-align: center;
+	padding: 20px;
+	height: 60px;
+}
+
+#mentions-legales a{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+}

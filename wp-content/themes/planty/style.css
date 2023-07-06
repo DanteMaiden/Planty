@@ -46,6 +46,7 @@ footer {
 	text-align: center;
 	padding: 20px;
 	height: 60px;
+    background-color: #ffffff;
 }
 
 #mentions-legales a{
@@ -54,4 +55,33 @@ footer {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 400;
+}
+
+
+/* Style header */
+
+header{
+	background-color: #ffffff;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 20px;
+	align-items: center;
+}
+
+#menu a{
+  color: black;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.bouton-rose{
+	background-color: #DC9F96;
+	color: #ffffff !important;
+	font-weight: 700;
+	padding: 30px;
 }

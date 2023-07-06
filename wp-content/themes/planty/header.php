@@ -3,6 +3,9 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -25,9 +28,9 @@
 
         <!-- navigation / menu -->
         <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-           <a href="#">Nous rencontrer</a>
-           <a href="#">Admin</a>
-           <a href="#" class="bouton-rose">Commander</a>
+           <a href="planty/nous-rencontrer">Nous rencontrer</a>
+           <a href="planty/wp-admin">Admin</a>
+           <a href="planty/commander" class="bouton-rose">Commander</a>
         </nav>
 
     </header>

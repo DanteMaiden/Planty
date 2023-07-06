@@ -7,6 +7,10 @@ Template: blankslate
 Version: 0.1.0
 */
 
+body{
+    font-family: 'Syne', sans-serif !important;
+}
+
 /* Masquage infos formulaire */
 .nf-before-form-content, .nf-form-title{
     display: none !important;

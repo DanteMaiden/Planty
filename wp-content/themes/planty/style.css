@@ -42,6 +42,41 @@ body{
 	text-align: center
 }
 
+.nf-form-content{
+	padding: 0 !important;
+}
+
+.nf-field-element p{
+		color: #FFFFFF;
+    font-family: "Syne", syne;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+label{
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: 400 !important;
+}
+
+#nf-field-21, #nf-field-4{
+	background-color: #E0B9B4;
+	font-size: 15px;
+	transition: 0.2s;
+}
+
+#nf-field-21:hover, #nf-field-4:hover{
+	background-color: #C02E44;
+	color: #ffffff;
+	transition: 0.2s;
+	font-weight: 700;
+}
+
+#nf-label-field-1,#nf-label-field-2, #nf-label-field-3{
+	color: #000000 !important;
+}
+
 
 /* Style footer */
 
@@ -59,6 +94,12 @@ footer {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 400;
+    transition-duration: 0.2s;
+}
+
+#mentions-legales a:hover{
+	font-weight: 700;
+    transition-duration: 0.2s;
 }
 
 
@@ -69,18 +110,25 @@ header{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 20px;
 	padding-left: 20px;
 	align-items: center;
 }
 
 #menu a{
-  color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 	font-weight: 400;
 	font-size: 16px;
-	padding-left: 30px;
-	padding-right: 30px;
+    min-width: 50px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+#menu a:hover{
+    font-weight: 700;
+    transition-duration: 0.2s;
 }
 
 .bouton-rose{
@@ -88,4 +136,82 @@ header{
 	color: #ffffff !important;
 	font-weight: 700;
 	padding: 30px;
+    transition-duration: 0.2s;
+}
+
+.bouton-rose:hover{
+	background-color: #C02E44;
+    transition-duration: 0.2s;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+
+
+	/* Accueil */
+
+	.elementor-8 .elementor-element.elementor-element-6a35649 .elementor-heading-title span  {
+		font-size: 20px !important;
+	}
+	
+	
+	.elementor-8 .elementor-element.elementor-element-6a35649 > .elementor-widget-container{
+		margin: 0 !important;
+	}
+	
+	.elementor-8 .elementor-element.elementor-element-844d711 > .elementor-widget-container {
+		margin: -30px 0px -40px 0px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-20f98ec .elementor-heading-title {
+		color: var(--e-global-color-primary );
+		font-family: "Syne", syne;
+		font-size: 24px;
+		font-weight: 800;
+		text-transform: uppercase;
+		line-height: 36px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-9d809df .elementor-heading-title {
+		color: var(--e-global-color-secondary );
+		font-family: "Syne", syne;
+		font-size: 24px;
+		font-weight: 800;
+		line-height: 36px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-b16516d {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 20px 0px 20px 0px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-33556b7 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-c587853 {
+		padding: 0px 50px 0px 50px;
+	}
+		
+	.elementor-element-983cc97, .elementor-element-d4da88f, .elementor-element-38848f7, .elementor-element-dd08b50, .elementor-element-bffbce2, .elementor-element-4be5542, .elementor-element-4f08f20{
+		text-align: center !important;
+	}
+		
+	/* CSS Page Nous rencontrer */
+	.elementor-10 .elementor-element.elementor-element-6e2ce89 .elementor-heading-title {
+		font-size: 24px !important;
+	}
+		
+	.elementor-10 .elementor-element.elementor-element-afe36af > .elementor-widget-container {
+		padding: 0px;
+	}
+		
+	.elementor-10 .elementor-element.elementor-element-7a8e546 {
+		padding: 0% 10% 0% 10%;
+	}
+		
 }

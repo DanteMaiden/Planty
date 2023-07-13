@@ -18,6 +18,16 @@ body{
 
 /* Style formulaires */
 
+#nf-form-2-cont nf-fields-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+#nf-field-21{
+	margin-left: 85%;
+}
+
 #nf-field-4{
 	background-color: #E0B9B4;
 	border-radius: 5px;
@@ -212,6 +222,25 @@ header{
 		
 	.elementor-10 .elementor-element.elementor-element-7a8e546 {
 		padding: 0% 10% 0% 10%;
+	}
+
+	/* Header */
+
+	header {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding-left: 0px;
+	}
+	
+	#branding{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	
+	#menu a{
+		width: 100%;
+	  margin-top: 20px;
 	}
 		
 }

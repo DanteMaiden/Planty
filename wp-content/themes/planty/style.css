@@ -11,6 +11,11 @@ body{
     font-family: 'Syne', sans-serif !important;
 }
 
+/* cache fleche champ number */
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+  }
+
 /* Masquage infos formulaire */
 .nf-before-form-content, .nf-form-title{
     display: none !important;
@@ -22,6 +27,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
+	margin-left: 30px;
 }
 
 #nf-field-21{
@@ -57,7 +63,7 @@ body{
 }
 
 .nf-field-element p{
-		color: #FFFFFF;
+	color: #FFFFFF;
     font-family: "Syne", syne;
     font-size: 30px;
     font-weight: 700;
@@ -70,13 +76,13 @@ label{
 	font-weight: 400 !important;
 }
 
-#nf-field-21, #nf-field-4{
+#nf-field-21, #nf-field-4, #nf-field-39{
 	background-color: #E0B9B4;
 	font-size: 15px;
 	transition: 0.2s;
 }
 
-#nf-field-21:hover, #nf-field-4:hover{
+#nf-field-21:hover, #nf-field-4:hover, #nf-field-39:hover{
 	background-color: #C02E44;
 	color: #ffffff;
 	transition: 0.2s;
@@ -86,6 +92,50 @@ label{
 #nf-label-field-1,#nf-label-field-2, #nf-label-field-3{
 	color: #000000 !important;
 }
+
+#nf-form-2-cont nf-fields-wrap nf-field:nth-child(odd) {
+	border-right: 1px solid #ffffff;
+	padding-right: 50px;
+}
+
+#nf-form-2-cont nf-fields-wrap nf-field:nth-child(even) {
+	padding-right: 50px;
+}
+
+#nf-form-2-cont nf-fields-wrap nf-field:nth-last-child(1) {
+	border-right-width: 0 !important;
+	margin-top: 30px;
+}
+
+#nf-field-24-wrap::before, #nf-field-25-wrap::before, #nf-field-27-wrap::before, #nf-field-29-wrap::before{
+	content: '+';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 5px 10px;
+	background-color: #DC9F96;
+    border-top-right-radius: 7px;
+	border-bottom: 1px solid #ffffff;
+	color: #ffffff;
+	z-index: 999;
+}
+
+#nf-field-24-wrap::after, #nf-field-25-wrap::after, #nf-field-27-wrap::after, #nf-field-29-wrap::after{
+	content: '-';
+    position: absolute;
+    right: 0px;
+    top: 23px;
+    padding: 5px 10px;
+	background-color: #DC9F96;
+    border-bottom-right-radius: 7px;
+	border-top: 1px solid #ffffff;
+	color: #ffffff;
+}
+
+#nf-field-24-wrap{
+	position: relative;
+}
+
 
 
 /* Style footer */
@@ -153,6 +203,14 @@ header{
 	background-color: #C02E44;
     transition-duration: 0.2s;
 }
+
+	/* CSS Page commander */
+
+	.elementor-element-b22795a .elementor-button, .elementor-element-39939fe .elementor-button, .elementor-element-f51c2a2 .elementor-button, .elementor-element-e0d345b .elementor-button{
+		width: 100px !important;
+    	height: 50px !important;
+	}
+
 
 
 /* Responsive */
@@ -240,7 +298,20 @@ header{
 	
 	#menu a{
 		width: 100%;
-	  margin-top: 20px;
+		margin-top: 20px;
+	}
+
+	/* Commander */
+	.elementor-element-226a96c h2{
+		font-size: 22px !important;
+	}
+
+	#nf-field-24-wrap::before, #nf-field-25-wrap::before, #nf-field-27-wrap::before, #nf-field-29-wrap::before{
+		top: 10px;
+	}
+	
+	#nf-field-24-wrap::after, #nf-field-25-wrap::after, #nf-field-27-wrap::after, #nf-field-29-wrap::after{
+		top: 33px;
 	}
 		
 }

@@ -12,25 +12,26 @@
 <?php wp_body_open(); ?>
 <div id="wrapper" class="hfeed">
     <header id="header" role="banner">
-
         <!-- logo / titre -->
         <div id="branding">
             <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
                  <!-- ajout de ma nouvelle widget area -->
+                 <a href="<?php echo(get_home_url()); ?>">
                 <?php if ( is_active_sidebar( 'logo-widget-area' ) ) : ?>
                     <div id="header-widget-area" class="logo-header-widget widget-area" role="complementary">
                         <?php dynamic_sidebar( 'logo-widget-area' ); ?>
                     </div>
                 <?php endif; ?>
+                </a>
                 <!-- fin nouvelle widget area -->
             </div>
         </div>
 
         <!-- navigation / menu -->
         <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-           <a href="planty/nous-rencontrer">Nous rencontrer</a>
-           <a href="planty/wp-admin">Admin</a>
-           <a href="planty/commander" class="bouton-rose">Commander</a>
+            <a href="<?php echo(get_home_url()); ?>/nous-rencontrer">Nous rencontrer</a>
+            <a href="<?php echo(admin_url()) ?>"><?php if(is_user_logged_in()){ echo "Admin";} ?></a>
+           <a href="<?php echo(get_home_url()); ?>/commander" class="bouton-rose">Commander</a>
         </nav>
 
     </header>

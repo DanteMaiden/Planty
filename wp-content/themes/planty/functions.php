@@ -31,8 +31,6 @@ function header_widgets_init() {
 
    /* Hook admin */
 
-/* Hook admin 
-
 function change_text_another_callback( $content ) { 
     if(is_user_logged_in()){
         $filtered_content = get_home_url() . "/wp-admin/";
@@ -42,4 +40,4 @@ function change_text_another_callback( $content ) {
     return $filtered_content;
 }
     
-add_filter( 'admin_url', 'change_text_another_callback');*/
+add_filter( 'admin_url', 'change_text_another_callback');

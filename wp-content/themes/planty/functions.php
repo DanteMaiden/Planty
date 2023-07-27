@@ -31,13 +31,22 @@ function header_widgets_init() {
 
    /* Hook admin */
 
-function change_text_another_callback( $content ) { 
-    if(is_user_logged_in()){
-        $filtered_content = get_home_url() . "/wp-admin/";
-    }else{
-        $filtered_content = "";
-    }
-    return $filtered_content;
-}
-    
-add_filter( 'admin_url', 'change_text_another_callback');
+   add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
+
+   function add_admin_link( $items, $args ) {
+       if (is_user_logged_in() && $args->theme_location == 'main-menu') {
+           $items .= '<li><a href="'. get_admin_url() .'">Admin</a></li>';
+       }
+       return $items;
+   }
+   
+   /* Creation emplacement menu */
+   function register_menus() {     
+       register_nav_menus( 
+           array( 
+               'main-menu' => 'Main-Menu' 
+           ) 
+       ); 
+   }
+   add_action('init', 'register_menus');
+   

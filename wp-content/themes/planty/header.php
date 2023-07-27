@@ -29,9 +29,14 @@
 
         <!-- navigation / menu -->
         <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-            <a href="<?php echo(get_home_url()); ?>/nous-rencontrer">Nous rencontrer</a>
-            <a href="<?php echo(admin_url()) ?>"><?php if(is_user_logged_in()){ echo "Admin";} ?></a>
-           <a href="<?php echo(get_home_url()); ?>/commander" class="bouton-rose">Commander</a>
+            <?php 
+                wp_nav_menu(   
+                    array ( 
+                        'theme_location' => 'main-menu' 
+                    ) 
+                ); 
+            ?>
+            <a href="<?php echo(get_home_url()); ?>/commander" class="bouton-rose">Commander</a>
         </nav>
 
     </header>

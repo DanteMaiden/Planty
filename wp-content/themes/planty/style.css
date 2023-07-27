@@ -204,6 +204,16 @@ header{
     transition-duration: 0.2s;
 }
 
+.menu-main-menu-container, #menu{
+	display: flex;
+}
+
+.menu-main-menu-container ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 	/* CSS Page commander */
 
 	.elementor-element-b22795a .elementor-button, .elementor-element-39939fe .elementor-button, .elementor-element-f51c2a2 .elementor-button, .elementor-element-e0d345b .elementor-button{
@@ -299,6 +309,14 @@ header{
 	#menu a{
 		width: 100%;
 		margin-top: 20px;
+	}
+
+	.menu-main-menu-container, #menu{
+		display: block;
+	}
+	
+	.menu-main-menu-container ul{
+		display: block;
 	}
 
 	/* Commander */
